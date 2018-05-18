@@ -1,6 +1,8 @@
 package com.github.vindell.shiro.freemarker.tags;
 
 import freemarker.core.Environment;
+import freemarker.ext.beans.BeansWrapper;
+import freemarker.ext.beans.BeansWrapperBuilder;
 import freemarker.template.*;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.subject.Subject;
@@ -44,5 +46,10 @@ public abstract class SecureTag implements TemplateDirectiveModel {
 		if (body != null) {
 			body.render(env.getOut());
 		}
+	}
+	
+	public static BeansWrapper getBeansWrapper(){
+		BeansWrapper beansWrapper = new BeansWrapperBuilder(Configuration.VERSION_2_3_0).build();
+		return beansWrapper;
 	}
 }

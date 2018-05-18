@@ -10,6 +10,7 @@ import java.util.Map;
  * <p>Equivalent to {@link com.github.vindell.shiro.freemarker.tags.web.tags.RoleTag}</p>
  */
 public abstract class RoleTag extends SecureTag {
+	
     String getName(Map params) {
         return getParam(params, "name");
     }
@@ -23,4 +24,5 @@ public abstract class RoleTag extends SecureTag {
     }
 
     protected abstract boolean showTagBody(String roleName);
+    
 }
