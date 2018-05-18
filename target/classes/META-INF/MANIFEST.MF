@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: com.github.vindell:shiro-freemarker
+Implementation-Version: 1.0.0-SNAPSHOT
+Built-By: Administrator
+Specification-Title: com.github.vindell:shiro-freemarker
+Implementation-Vendor-Id: com.github.vindell
+Build-Jdk: 1.8.0_45
+Specification-Version: 1.0
+Implementation-URL: https://github.com/vindell/shiro-freemarker
+Created-By: Maven Integration for Eclipse
+
