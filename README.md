@@ -34,7 +34,7 @@ public class FreemarkerConfig {
 	
 	@PostConstruct
 	public void setSharedVariable() throws TemplateModelException {
-		configuration.setSharedVeriable("shiro", new ShiroTags());
+		configuration.setSharedVariable("shiro", new ShiroTags());
 	}
 	 
 }
