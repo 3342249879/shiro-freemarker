@@ -17,3 +17,25 @@
 ```
 
 ### Sample
+
+普通的项目整合：
+```java
+cfg.setSharedVeriable("shiro", new ShiroTags());
+```
+
+Spring Boot整合：
+
+```java
+@Configuration
+public class FreemarkerConfig {
+
+	@Autowired
+	private freemarker.template.Configuration configuration;
+	
+	@PostConstruct
+	public void setSharedVariable() throws TemplateModelException {
+		configuration.setSharedVeriable("shiro", new ShiroTags());
+	}
+	 
+}
+```
